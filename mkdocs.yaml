@@ -1,0 +1,81 @@
+site_name: MAIN S9 Wiki
+
+site_description: Recap of the fundamental topics explored in MAIN5
+site_author: Evan Voyles
+
+# repo_url: https://github.com/ejovo13/mullen_validation
+
+theme:
+  features:
+    - content.code.copy
+    - content.code.annotate
+
+  name: material
+  palette:
+    scheme: default
+    primary: black
+  icon:
+  admonition:
+    note: simple/meteor
+    abstract: octicons/checklist-16
+    info: octicons/info-16
+    tip: octicons/squirrel-16
+    success: octicons/check-16
+    question: octicons/question-16
+    warning: simple/meteor
+    failure: octicons/x-circle-16
+    danger: octicons/zap-16
+    bug: octicons/bug-16
+    example: octicons/beaker-16
+    quote: octicons/quote-16
+  # hljs_style: monokai
+
+markdown_extensions:
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+            - name: mermaid
+              class: mermaid
+              format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# extra_css:
+#   - stylesheets/extra.css
+
+
+# nav:
+#     - Home: 'index.md'
+#     - Installation: "installation.md"
+#     - Comprehensive Guide: "iz_one_and_only.md"
+#     - Explanation:
+#         - 'Video Database': 'explanation/video_database.md'
+#         - 'Overview': 'explanation/index.md'
+#     - Tutorials:
+#         - '0. Getting Started': 'tutorials/0_start.md'
+#         - '1. Your First Meteor': 'tutorials/1_detecting_meteors.md'
+#         - '2. Loading Tracked Objects': 'tutorials/2_Load_Tracked_Objects.md'
+#         - '3. Playing with Args': 'tutorials/3_Playing_with_args.md'
+#         - '4. Accessing Movement Statistics': 'tutorials/4_Retrieving_numerical_results.md'
+#     - How-to:
+#         - 'Configure fmdt': 'howto/0_initialization.md'
+#         - 'Split Videos': 'howto/1_video_decomposition.md'
+#         - 'Test our Ground Truth Database': 'howto/2_test_db.md'
+#         - 'Load Videos from our Database': 'howto/3_load_videos.md'
+#         - 'Cache Detection Results': 'howto/4_use_the_cache.md'
+#         - 'Use a Video to call fmdt-detect': 'howto/5_use_video.md'
+#     - Reference:
+#         - 'fmdt': "reference/home.md"
+#         - 'res': "reference/res.md"
+
+nav:
+  - Home: 'index.md'
+  - EPU-N9-MAO: 'opti.md'
