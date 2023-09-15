@@ -1,1 +1,0 @@
-# Algorithmique combinatoire, optimisation
